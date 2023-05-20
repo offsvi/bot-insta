@@ -1,5 +1,7 @@
 from selenium import webdriver
 import time
+import random
+import string
 
 navegador = webdriver.Chrome("chromedriver.exe")
 
@@ -14,8 +16,11 @@ time.sleep(7)
 navegador.get("https://www.instagram.com/p/CsbYeQdLag6/")
 time.sleep(2)
 
-z = 0
-while 1 == 1:
+
+while True:
+    comentario = ''.join(random.choice(string.ascii_lowercase) for _ in range(5))
+    print(comentario)
+    navegador.find_element('xpath', '//*[@id="mount_0_0_iw"]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[3]/div/form/div/textarea').click()
     navegador.find_element('xpath', '//*[@id="mount_0_0_iw"]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[3]/div/form/div/textarea').send_keys("G")
     z += 1
     print(f"{z}")
