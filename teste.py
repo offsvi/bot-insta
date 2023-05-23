@@ -10,7 +10,7 @@ navegador.find_element('xpath', '//*[@id="loginForm"]/div/div[1]/div/label/input
 navegador.find_element('xpath', '//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys("")
 navegador.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click()
 time.sleep(7)
-# Indo para o link do sorteio
+#Indo para o link do sorteio
 navegador.get("https://www.instagram.com/p/CsbYeQdLag6/")
 time.sleep(2)
 
