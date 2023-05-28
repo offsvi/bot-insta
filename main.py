@@ -1,3 +1,4 @@
+#código em
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
@@ -8,7 +9,8 @@ import os.path
 # Atualizar o driver do navegador toda vez que for executado
 # from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.chrome.service import Service
-# servico = Service(ChromeDriverManager().install())
+# servico = Service(ChromeDriverManager().install())]
+
 
 driver = webdriver.Chrome("chromedriver.exe")
 
