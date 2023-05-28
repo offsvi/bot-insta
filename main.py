@@ -22,7 +22,6 @@ def sorteioInstagram():
         print("Arquivo de Seguidores já carregado...")
     else:
         pegar_seguidores("liderwesleyalemao")
-
     comentandoPost()
 
 def abrindo_instagram(username, password, url):
