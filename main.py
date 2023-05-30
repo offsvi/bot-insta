@@ -28,7 +28,7 @@ def abrindo_instagram(username, password, url):
     print("Abrindo Instagram...")
     driver.get("https://www.instagram.com/")
     sleep(3)
-    print("Fazendo Login no Instagram...")
+    print("Fazendo Login no Instagram..")
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[1]/div/label/span').send_keys(username)
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(password)
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click()
