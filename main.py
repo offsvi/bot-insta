@@ -36,7 +36,7 @@ def abrindo_instagram(username, password, url):
     print("Negando Solicitação de Segurança Instagram...")
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click()
     sleep(5)
-    print("Acessando o Post do sorteio...")
+    print("Acessando o Post do sorteio....")
     driver.get(url)
 
 
