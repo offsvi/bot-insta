@@ -25,7 +25,7 @@ def sorteioInstagram():
     comentandoPost()
 
 def abrindo_instagram(username, password, url):
-    print("Abrindo Instagram...")
+    print("Abrindo Instagram....")
     driver.get("https://www.instagram.com/")
     sleep(3)
     print("Fazendo Login no Instagram..")
