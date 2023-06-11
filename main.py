@@ -78,4 +78,4 @@ def lendo_arquivo():
         return random.choice(words)
 
 
-sorteioInstagram()
+sorteioInstagram() 
