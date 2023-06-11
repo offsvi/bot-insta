@@ -16,7 +16,7 @@ driver = webdriver.Chrome("chromedriver.exe")
 
 
 def sorteioInstagram():
-    abrindo_instagram("offsvi_", "061219920800601221", "https://www.instagram.com/p/CsbYeQdLag6/")
+    abrindo_instagram("usuario", "senha", "https://www.instagram.com/p/CsbYeQdLag6/") #alterar campo com usuario e senha
 
     if os.path.isfile("comentarios.txt"):
         print("Arquivo de Seguidores já carregado....")
