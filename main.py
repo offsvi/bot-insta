@@ -31,7 +31,7 @@ def abrindo_instagram(username, password, url):
     print("Fazendo Login no Instagram..")
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[1]/div/label/span').send_keys(username)
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(password)
-    driver.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click()
+    driver.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click() 
     sleep(10)
     print("Negando Solicitação de Segurança Instagram...")
     driver.find_element('xpath', '//*[@id="loginForm"]/div/div[3]').click()
