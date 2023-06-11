@@ -42,7 +42,7 @@ def abrindo_instagram(username, password, url):
 
 def pegar_seguidores(usuario):
     L = instaloader.Instaloader()
-    L.login('offsvi_', '061219920800601221')
+    L.login('', '')
     profile = instaloader.Profile.from_username(L.context, usuario)
 
     print(f"Salvando Seguidores de {usuario}...")
