@@ -60,7 +60,7 @@ def comentandoPost():
     while 1 == 1:
         cmt = driver.find_element('xpath', '//*[@id="mount_0_0_ZX"]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[3]/div/form/div/textarea')
         cmt.click()
-        comment = lendo_arquivo()
+        comment = lendo_arquivo() 
         driver.find_element('xpath', '//*[@id="mount_0_0_ZX"]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[3]/div/form/div/textarea').send_keys(comment)
         driver.find_element('xpath', '//*[@id="mount_0_0_ZX"]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[3]/div/form/div/textarea').send_keys(' ')
         sleep(10)
