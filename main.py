@@ -46,7 +46,7 @@ def pegar_seguidores(usuario):
     profile = instaloader.Profile.from_username(L.context, usuario)
 
     print(f"Salvando Seguidores de {usuario}...")
-    # Salvando Seguidores em Arquivo .TXT
+    # Salvando Seguidores em Arquivo .TXT 
     file = open("comentarios.txt.txt", "a+")
     for followee in profile.get_followers():
         username = "@" + followee.username
