@@ -50,7 +50,7 @@ def pegar_seguidores(usuario):
     file = open("comentarios.txt.txt", "a+")
     for followee in profile.get_followers():
         username = "@" + followee.username
-        file.write(username + "\n") 
+        file.write(username + "\n")
 
     file.close()
 
