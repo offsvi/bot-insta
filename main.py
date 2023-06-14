@@ -52,7 +52,7 @@ def pegar_seguidores(usuario):
         username = "@" + followee.username
         file.write(username + "\n")
 
-    file.close()
+    file.close() 
 
 
 def comentandoPost():
